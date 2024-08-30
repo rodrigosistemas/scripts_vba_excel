@@ -2,8 +2,8 @@
 
 ## Filtro automático
 Sub filtrar()
-	filtro = "*" & Sheets("Clientes").TextBox1.Text & "*"
-	Range("A7").AutoFilter field:=2, Criteria1:=filtro
+	filtro = "*" & Sheets("hoja").TextBox1.Text & "*"
+	Range("").AutoFilter field:=2, Criteria1:=filtro
 End Sub
 
 ## Mostrar hojas muy ocultas
