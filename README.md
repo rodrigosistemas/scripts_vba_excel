@@ -6,14 +6,20 @@ Sub filtrar()
     filtro = "*" & Sheets("hoja").TextBox1.Text & "*"
     Range("").AutoFilter field:=2, Criteria1:=filtro
 End Sub
+```
 
+## Mostrar hojas ocultas
+```vbnet
 Sub mostrar_hojas()
     Dim wks As Worksheet
     For Each wks In ActiveWorkbook.Worksheets
         wks.Visible = xlSheetVisible
     Next wks
 End Sub
+```
 
+## Ocultar una hoja específica
+```vbnet
 Sub OcultarHojaEspecifica()
     ' Verifica si la hoja existe y luego la oculta
     Dim hoja As Worksheet
@@ -28,3 +34,4 @@ Sub OcultarHojaEspecifica()
         MsgBox "La hoja especificada no existe."
     End If
 End Sub
+```
